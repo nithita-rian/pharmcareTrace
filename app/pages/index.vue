@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TraceInformation :product="product"/>
+        <TraceInformation :product="product" />
     </div>
 </template>
 <script setup>
