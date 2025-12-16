@@ -1,7 +1,7 @@
 <!-- components/ProductInformation.vue -->
 <template>
-    <div class="bg-white rounded-lg shadow-lg px-12 py-6">
-        <h1 class="py-2 text-xl text-green-800 font-bold underline">
+    <div class="bg-white rounded-lg shadow-lg px-12 py-8 space-y-4">
+        <h1 class="text-xl text-green-800 font-bold underline">
             ข้อมูลผลิตภัณฑ์
         </h1>
         <div v-if="product" class="space-y-2 text-base">

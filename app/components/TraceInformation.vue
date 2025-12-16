@@ -18,7 +18,7 @@
                         <span class="col-span-2 text-gray-600">{{ product.name }}</span>
                     </div>
                     <div class="grid grid-cols-3">
-                        <span class="font-bold">จาก :</span>
+                        <span class="font-bold">ผลิตโดย :</span>
                         <span class="col-span-2 text-gray-600">{{ product.produced }}</span>
                     </div>
                     <div class="grid grid-cols-3">
@@ -38,8 +38,8 @@
                         <span class="col-span-2 text-gray-600">{{ product.produceDate }}</span>
                     </div>
                     <div class="grid grid-cols-3">
-                        <span class="font-bold">แหล่งที่มาของการแปรรูป :</span>
-                        <span class="col-span-2 text-gray-600">{{ product.processingAddress }}</span>
+                        <span class="font-bold">ผู้จัดจำหน่าย :</span>
+                        <span class="col-span-2 text-gray-600">{{ product.distributor }}</span>
                     </div>
                     <div class="grid grid-cols-3">
                         <span class="font-bold">วันที่บรรจุ :</span>
