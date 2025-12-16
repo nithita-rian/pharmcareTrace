@@ -1,3 +1,4 @@
+<!-- layouts/default.vue -->
 <template>
     <div class="min-h-screen">
         <header>
@@ -8,7 +9,7 @@
             </div>
         </header>
         <main class="mx-auto px-4 py-8 min-h-screen bg-white">
-            <slot />
+            <slot></slot>
         </main>
         <footer class="bg-gray-100 inset-shadow-sm sticky bottom-0">
             <div class="px-4 py-4 flex items-center space-x-2 md:px-8 md:py-6">

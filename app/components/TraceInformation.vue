@@ -1,4 +1,4 @@
-<!-- TraceInformation.vue -->
+<!-- components/TraceInformation.vue -->
 <template>
     <div class="bg-white rounded-lg shadow-lg p-6">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
