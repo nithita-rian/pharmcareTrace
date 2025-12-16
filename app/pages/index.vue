@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1 class="text-2xl">index</h1>
+    <h1 class="text-base text-red-500">index</h1>
   </div>
 </template>
