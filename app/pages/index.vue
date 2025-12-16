@@ -3,6 +3,7 @@
     <div class="space-y-8">
         <TraceInformation :product="trace" />
         <ProductInformation :product="product" />
+        <Map />
     </div>
 </template>
 <script setup>
