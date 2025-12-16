@@ -1,11 +1,13 @@
+<!-- index.vue -->
 <template>
-    <div>
-        <TraceInformation :product="product" />
+    <div class="space-y-8">
+        <TraceInformation :product="trace" />
+        <ProductInformation :product="product" />
     </div>
 </template>
 <script setup>
 // Mock Data based on the image
-const product = reactive({
+const trace = reactive({
     name: 'น้ำตรีผลา สูตร LOWSUGAR',
     productCode: '44-2-01055-2-0001',
     produced: 'โรงงานฟาร์มแคร์ ฟาร์มาซูติคอล คณะเภสัชศาสตร์ มหาวิทยาลัยมหาสารคาม',
@@ -18,6 +20,16 @@ const product = reactive({
     transportType: 'Truck',
     containerNo: '123456789',
     trackingNo: 'UFQHFY'
+});
+
+const product = reactive({
+    name: 'น้ำตรีผลา สูตร LOWSUGAR',
+    productCode: '44-2-01055-2-0001',
+    ingredients: 'ผลสมอไทย (Terminalia chebula), ผลสมอพิเภก (Terminalia bellerica), ผลมะขามป้อม (Phyllatus emblica)',
+    size:'280',
+    unit:'มิลลิลิตร',
+    properties:'น้ำตรีผลาถูกพัฒนามาจากยาตรีผลา ให้เป็นเครื่องดื่มที่สามารถดื่มได้ทั่วไป ทุกเพศ ทุกวัย เป็นเครื่องดื่มที่อุดมไปด้วยสารฟีนอลิก ซึ่งมีฤทธิ์ต้านอนุมูลอิสระ ช่วยบำรุงร่างกาย',
+    processingAddress: 'โรงงานฟาร์มแคร์ ฟาร์มาซูติคอล คณะเภสัชศาสตร์ มหาวิทยาลัยมหาสารคาม',
 });
 </script>
 
