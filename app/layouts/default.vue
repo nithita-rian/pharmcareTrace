@@ -1,11 +1,11 @@
 <!-- layouts/default.vue -->
 <template>
-    <div class="min-h-screen">
+    <div class="min-h-screen min-w-screen">
         <header>
-            <div class="bg-[#468775] px-4 rounded-t-lg flex justify-end items-center gap-4">
+            <div class="bg-[#468775] px-12 rounded-t-lg flex justify-end items-center gap-4">
                 <h2 class="text-lg font-bold text-white">PharmCare Pharmaceutical</h2>
                 <!-- <h2 class="text-blue-800">NECTEC</h2> -->
-                <img src="/Logo_of_NECTEC.svg" alt="Logo of NECTEC" class="h-24 w-24"/>
+                <img src="~/assets/img/Logo_of_NECTEC.svg" alt="Logo of NECTEC" class="h-24 w-24"/>
             </div>
         </header>
         <main class="mx-auto px-4 py-8 min-h-screen bg-white">
