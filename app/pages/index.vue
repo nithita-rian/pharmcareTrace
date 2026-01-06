@@ -1,7 +1,7 @@
 <!-- index.vue -->
 <template>
     <div class="space-y-8">
-        <TraceInformation :product="trace" />
+        <TraceInformation :product="trace" :images="images" />
         <ProductInformation :product="product" />
         <Map />
     </div>
@@ -31,6 +31,14 @@ const product = reactive({
     unit:'มิลลิลิตร',
     properties:'น้ำตรีผลาถูกพัฒนามาจากยาตรีผลา ให้เป็นเครื่องดื่มที่สามารถดื่มได้ทั่วไป ทุกเพศ ทุกวัย เป็นเครื่องดื่มที่อุดมไปด้วยสารฟีนอลิก ซึ่งมีฤทธิ์ต้านอนุมูลอิสระ ช่วยบำรุงร่างกาย',
 });
+
+const images = [
+    "/img/tripala.jpg",
+    "/img/tripala2.jpg",
+    "/img/tripala3.jpg",
+    "/img/tripala4.jpg",
+    "/img/tripala5.jpg"
+];
 </script>
 
 <style></style>

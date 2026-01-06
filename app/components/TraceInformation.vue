@@ -1,13 +1,9 @@
 <!-- components/TraceInformation.vue -->
 <template>
-    <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+    <div class="bg-white rounded-lg shadow-lg p-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
 
-            <div class="md:col-span-5 flex flex-col items-center justify-center">
-                <div class="w-full p-2 bg-gray-50 flex items-center justify-center border rounded-lg mb-4">
-                    <img src="/tripala.jpg" alt="tripala">
-                </div>
-            </div>
+            <ProductImages class="md:col-span-5" :images="images" />
 
             <div class="md:col-span-7">
                 <h2 class="text-xl font-bold underline mb-4 text-gray-900">สรุปการตรวจสอบย้อนกลับ</h2>
@@ -71,6 +67,10 @@
 
 const props = defineProps({
     product: Object,
+    images: {
+        type: Array,
+        default: () => []
+    }
 });
 </script>
 
