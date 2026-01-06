@@ -9,13 +9,13 @@
 
         <div class="grid gap-4" v-if="images.length > 0">
             <div>
-                <img class="h-auto max-w-full rounded-lg w-full object-contain aspect-4/3 transition-all duration-300"
+                <img class="h-auto max-h-full max-w-full rounded-lg w-full object-contain aspect-4/3 transition-all duration-300"
                     :src="activeImage" alt="Selected product image">
             </div>
 
             <div class="grid grid-cols-5 gap-4">
                 <div v-for="(img, index) in images" :key="index" @click="activeImage = img" class="cursor-pointer">
-                    <img class="h-24 max-w-full rounded-lg hover:opacity-75 transition-opacity"
+                    <img class="h-full md:h-24 w-40 rounded-lg hover:opacity-75 transition-opacity"
                         :class="{ 'ring-2 ring-[#468775] ring-offset-2': activeImage === img }" :src="img"
                         alt="Thumbnail">
                 </div>
