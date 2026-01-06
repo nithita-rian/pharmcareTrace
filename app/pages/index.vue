@@ -40,7 +40,7 @@
             </div>
 
             <div v-if="activeTab === 3">
-                <p class="text-center">ยังไม่มีข้อมูล</p>
+                <OtherInformation :images="others"/>
             </div>
 
         </div>
@@ -102,6 +102,11 @@ const Certs = [
     "/img/Cert (3).jpg",
     "/img/Cert (4).jpg",
     "/img/Cert (5).jpg"
+];
+
+const others = [
+    "/img/other (1).jpg",
+    "/img/other (2).jpg",
 ];
 </script>
 
